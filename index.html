@@ -269,7 +269,7 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.88rem;border-top:1px so
         <article class="project">
         <header>
           <h3>FraudGuard AI: explainable credit card fraud detection</h3>
-          <span class="status">Live demo</span>
+          <a class="status" href="https://fraudguard-dashboard-f28d.onrender.com" target="_blank" rel="noopener" style="text-decoration:none">Live demo ↗</a>
         </header>
         <p>End-to-end fraud detection on 284,807 real card transactions that decides by cost in dollars, explains every prediction and monitors itself for drift. XGBoost with a cost-based threshold catches 85 of 98 test frauds (0.87 average precision, 0.98 ROC-AUC) and cuts missed fraud plus review costs versus a Random Forest baseline. A time-based split, PSI drift alarms and a retraining simulation show how the model holds up as data changes.</p>
         <p>Predictions are served through a FastAPI service with TreeSHAP explanations and a Streamlit dashboard with “what if?” analysis, packaged with Docker, tested in CI and deployed on Render.</p>
