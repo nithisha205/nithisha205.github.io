@@ -266,17 +266,20 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.88rem;border-top:1px so
     <h2 id="proj-h">Projects</h2>
     <div class="projects">
 
-      <article class="project">
+        <article class="project">
         <header>
           <h3>FraudGuard AI: explainable credit card fraud detection</h3>
-          <span class="status wip">In progress</span>
+          <span class="status">Live demo</span>
         </header>
-        <p>An end-to-end fraud detection project built in the open on public transaction data. It compares models on a heavily imbalanced dataset, judges them on precision, recall and PR-AUC rather than accuracy, and will serve explainable predictions through a FastAPI service and a Streamlit dashboard.</p>
+        <p>End-to-end fraud detection on 284,807 real card transactions that decides by cost in dollars, explains every prediction and monitors itself for drift. XGBoost with a cost-based threshold catches 85 of 98 test frauds (0.87 average precision, 0.98 ROC-AUC) and cuts missed fraud plus review costs versus a Random Forest baseline. A time-based split, PSI drift alarms and a retraining simulation show how the model holds up as data changes.</p>
+        <p>Predictions are served through a FastAPI service with TreeSHAP explanations and a Streamlit dashboard with “what if?” analysis, packaged with Docker, tested in CI and deployed on Render.</p>
         <ul class="tags">
-          <li>Python</li><li>scikit-learn</li><li>Imbalanced learning</li><li>FastAPI</li><li>Streamlit</li><li>pytest</li>
+          <li>Python</li><li>XGBoost</li><li>scikit-learn</li><li>SHAP</li><li>Imbalanced learning</li><li>Drift monitoring</li><li>FastAPI</li><li>Streamlit</li><li>Docker</li><li>GitHub Actions</li>
         </ul>
         <div class="links">
-          <a href="https://github.com/nithisha205/fraudguard-ai" target="_blank" rel="noopener">Follow progress on GitHub</a>
+          <a href="https://fraudguard-dashboard-f28d.onrender.com" target="_blank" rel="noopener">Live dashboard</a>
+          <a href="https://fraudguard-api-dj2k.onrender.com/docs" target="_blank" rel="noopener">API docs</a>
+          <a href="https://github.com/nithisha205/fraudguard-ai" target="_blank" rel="noopener">Code on GitHub</a>
         </div>
       </article>
 
